@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | CoinPro</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <main class="dashboard">
+    <h1>Welcome, <span id="user-name"></span> 👋</h1>
+
+    <div class="card">
+      <h2>Pending Payment</h2>
+      <p><span id="pending-payment"></span> USDT</p>
+    </div>
+
+    <div class="card">
+      <h2>Total Earnings</h2>
+      <p><span id="total-earnings"></span> USDT</p>
+    </div>
+
+    <div class="card">
+      <h2>Referral Earnings</h2>
+      <p><span id="referral-earnings">15.00</span> USDT</p>
+    </div>
+
+    <div class="card">
+      <h2>Recent Transactions</h2>
+      <ul id="transactions">
+        <!-- Transactions will be inserted here -->
+      </ul>
+    </div>
+
+    <button id="logout">Log Out</button>
+  </main>
+
+  <script>
+    // Retrieve data from localStorage
+    const userName = localStorage.getItem("userName") || "User";
+    const pending = localStorage.getItem("pendingPayment") || "0.00";
+    const earnings = localStorage.getItem("totalEarnings") || "0.00";
+
+    document.getElementById("user-name").textContent = userName;
+    document.getElementById("pending-payment").textContent = pending;
+    document.getElementById("total-earnings").textContent = earnings;
+
+    // Fake transactions list
+    const transactions = [
+      { date: "2025-08-06", amount: "+10.00 USDT", status: "Completed" },
+      { date: "2025-08-04", amount: "+7.50 USDT", status: "Completed" },
+      { date: "2025-08-01", amount: "+5.00 USDT", status: "Pending" }
+    ];
+
+    const list = document.getElementById("transactions");
+    transactions.forEach(tx => {
+      const li = document.createElement("li");
+      li.textContent = `${tx.date} — ${tx.amount} (${tx.status})`;
+      list.appendChild(li);
+    });
+
+    // Logout button clears data and redirects
+    document.getElementById("logout").addEventListener("click", () => {
+      localStorage.clear();
+      window.location.href = "signup.html"; // or index.html
+    });
+  </script>
+</body>
+</html>
+

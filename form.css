@@ -1,0 +1,93 @@
+/* CoinPro Networks Design - Dark Theme */
+
+:root {
+  --bg-color: #0d1117;
+  --form-bg: #161b22;
+  --text-color: #c9d1d9;
+  --accent-color: #58a6ff;
+  --input-bg: #21262d;
+  --input-border: #30363d;
+  --button-bg: #238636;
+  --button-hover: #2ea043;
+  --error: #ff4d4f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+main {
+  width: 100%;
+  max-width: 450px;
+}
+
+.form-section {
+  background-color: var(--form-bg);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 1.8rem;
+  color: var(--accent-color);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+  padding: 10px;
+  margin-bottom: 18px;
+  background-color: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: 6px;
+  color: var(--text-color);
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="file"]:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+button[type="submit"] {
+  padding: 12px;
+  background-color: var(--button-bg);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--button-hover);
+}

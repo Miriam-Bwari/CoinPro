@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoinPro Networks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <main>
+    <section class="form-section">
+      <h2>Create Your Account</h2>
+      <form id="signupForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="wallet">Wallet Address</label>
+        <input type="text" id="wallet" name="wallet" required>
+
+        <label for="portfolio">Portfolio Link</label>
+        <input type="file" id="portfolio" name="portfolio">
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="java.js"></script>
+  <script>
+    
+  document.getElementById("signupForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    
+    // Simulate earnings and pending payment
+    const pendingPayment = 25.75;
+    const totalEarnings = 137.50;
+
+    // Save to localStorage
+    localStorage.setItem("userName", name);
+    localStorage.setItem("pendingPayment", pendingPayment);
+    localStorage.setItem("totalEarnings", totalEarnings);
+
+    alert("Account created! Redirecting to dashboard...");
+    window.location.href = "dashboard.html";
+  });
+</script>
+
+    });
+  </script>
+</body>
+</html>

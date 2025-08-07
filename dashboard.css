@@ -1,0 +1,28 @@
+.card ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.card ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #334155;
+  font-size: 0.95rem;
+}
+
+#logout {
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  background-color: #ef4444;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#logout:hover {
+  background-color: #dc2626;
+}
+
