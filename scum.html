@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoinPro Networks</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="min-h-screen bg-gray-950 text-gray-100">
+
+  <!-- Header -->
+  <header class="border-b border-gray-800 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <!-- Shield Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <h1 class="text-2xl font-bold">CoinPro Networks</h1>
+        </div>
+        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Dashboard</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto px-6 py-8">
+
+    <!-- Intro -->
+    <div class="mb-8">
+      <h2 class="text-3xl font-bold mb-2">CoinPro Dashboard</h2>
+      <p class="text-gray-400">Manage your smart contracts and wallet operations</p>
+    </div>
+
+    <!-- Feature Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+
+      <!-- Card 1 -->
+      <div class="bg-gray-900 border border-gray-800 rounded-lg hover:shadow-lg transition-shadow">
+        <div class="p-6 border-b border-gray-800">
+          <div class="flex items-center space-x-2 mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2H5V7h14v8h-4v2m-6 4h4"/></svg>
+            <span class="font-semibold">Smart Contract Tasks</span>
+          </div>
+          <p class="text-gray-400 text-sm">Deploy and manage your smart contracts with ease</p>
+        </div>
+        <div class="p-6 space-y-2">
+          <div class="flex justify-between">
+            <span class="text-sm text-gray-400">Active Contracts</span>
+            <span class="px-2 py-1 border border-gray-700 rounded text-sm">12</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-sm text-gray-400">Pending Tasks</span>
+            <span class="px-2 py-1 bg-gray-800 rounded text-sm">3</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-gray-900 border border-gray-800 rounded-lg hover:shadow-lg transition-shadow">
+        <div class="p-6 border-b border-gray-800">
+          <div class="flex items-center space-x-2 mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 4V1m0 22v-3m8-8h3M1 12h3m15.364 6.364l2.121 2.121M4.515 4.515l2.121 2.121m0 11.314l-2.121 2.121M19.485 4.515l-2.121 2.121"/></svg>
+            <span class="font-semibold">Wallet Sync</span>
+          </div>
+          <p class="text-gray-400 text-sm">Synchronize your wallet data across all platforms</p>
+        </div>
+        <div class="p-6 space-y-2">
+          <div class="flex justify-between">
+            <span class="text-sm text-gray-400">Sync Status</span>
+            <span class="px-2 py-1 bg-gray-800 rounded text-sm">Connected</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-sm text-gray-400">Last Sync</span>
+            <span class="text-sm text-gray-400">2 min ago</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-gray-900 border border-gray-800 rounded-lg hover:shadow-lg transition-shadow">
+        <div class="p-6 border-b border-gray-800">
+          <div class="flex items-center space-x-2 mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            <span class="font-semibold">Live Contract Deployment</span>
+          </div>
+          <p class="text-gray-400 text-sm">Deploy contracts in real-time with monitoring</p>
+        </div>
+        <div class="p-6 space-y-2">
+          <div class="flex justify-between">
+            <span class="text-sm text-gray-400">Gas Tracker</span>
+            <span class="px-2 py-1 border border-gray-700 rounded text-sm">25 Gwei</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-sm text-gray-400">Network</span>
+            <span class="px-2 py-1 bg-gray-800 rounded text-sm">Ethereum</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Connect Wallet Section -->
+    <div class="bg-blue-900/10 border border-blue-500/20 rounded-lg">
+      <div class="p-6 text-center border-b border-blue-500/20">
+        <h3 class="text-2xl font-bold">Connect Your Wallet</h3>
+        <p class="text-gray-400">Connect your wallet to access all CoinPro features and start managing your assets</p>
+      </div>
+      <div class="p-6 text-center">
+        <button class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold flex items-center mx-auto">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 4V1m0 22v-3m8-8h3M1 12h3m15.364 6.364l2.121 2.121M4.515 4.515l2.121 2.121m0 11.314l-2.121 2.121M19.485 4.515l-2.121 2.121"/></svg>
+          Connect Wallet to Proceed
+        </button>
+        <p class="text-sm text-gray-400 mt-4">
+          Supports MetaMask, WalletConnect, and other popular wallets
+        </p>
+      </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-8">
+      <div class="bg-gray-900 border border-gray-800 rounded-lg p-6">
+        <div class="text-2xl font-bold">$0.00</div>
+        <p class="text-sm text-gray-400">Total Balance</p>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-lg p-6">
+        <div class="text-2xl font-bold">0</div>
+        <p class="text-sm text-gray-400">Active Contracts</p>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-lg p-6">
+        <div class="text-2xl font-bold">0</div>
+        <p class="text-sm text-gray-400">Transactions</p>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-lg p-6">
+        <div class="text-2xl font-bold">$0.00</div>
+        <p class="text-sm text-gray-400">Earnings</p>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>
