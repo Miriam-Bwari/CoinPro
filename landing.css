@@ -50,6 +50,21 @@ nav a:hover {
     color: white;
 }
 
+/* Special styling for logout */
+.logout-link {
+    margin-left: auto; /* pushes it to the right */
+    background-color: #ff4d4d;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    color: white !important;
+    transition: background 0.3s ease;
+}
+
+.logout-link:hover {
+    background-color: #e60000;
+}
+
 /* Hero Section */
 .hero {
     text-align: center;
@@ -217,6 +232,21 @@ footer {
     50% {
         opacity: 0.5;
     }
+}
+
+/* Logout link styling */
+.logout-link {
+    margin-left: auto; /* pushes it to the far right */
+    background-color: #ff4d4d;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    color: white !important;
+    transition: background 0.3s ease;
+}
+
+.logout-link:hover {
+    background-color: #e60000;
 }
 
 /* Responsive Design */

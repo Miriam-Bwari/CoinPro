@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoinPro Networks - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>CoinPro Networks</h1>
+        <nav>
+            <a href="dashboard.html">Home</a>
+            <a href="#">About Us</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="#">Profile</a>
+            <a href="#" id="logoutBtn" class="logout-link">Log Out</a>
+        </nav>
+    </header>
+
+    <!-- DASHBOARD CONTENT -->
+    <section class="hero">
+        <h2>Welcome to Your Dashboard</h2>
+        <p>Manage your profile, explore features, and connect with blockchain-powered job opportunities.</p>
+    </section>
+
+    <!-- DASHBOARD FEATURES -->
+    <section class="features">
+        <div class="feature">
+            <h3>Track Your Tasks</h3>
+            <p>View active, completed, and pending jobs in one place.</p>
+        </div>
+        <div class="feature">
+            <h3>Wallet & Payments</h3>
+            <p>Securely track earnings and receive instant crypto payouts.</p>
+        </div>
+        <div class="feature">
+            <h3>Community Access</h3>
+            <p>Join discussions and collaborate with other Web3 professionals.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2025 CryptoTaskHub. All rights reserved.
+    </footer>
+
+    <script>
+      // Protect dashboard if not logged in
+      if (localStorage.getItem("isLoggedIn") !== "true") {
+        window.location.href = "signin.html";
+      }
+
+      // Logout function
+      document.getElementById("logoutBtn").addEventListener("click", function(e) {
+        e.preventDefault(); // Prevent default link behavior
+        localStorage.clear();
+        alert("You have been logged out.");
+        window.location.href = "index.html"; // Redirect to home
+        
+      });
+    </script>
+    <!-- Add auth.js script here -->
+    <script src="auth.js"></script>
+</body>
+</html>

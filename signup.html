@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CoinPro Networks</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="form.css">
 </head>
 <body>
   <main>
@@ -31,27 +31,26 @@
 
   <script src="script.js"></script>
   <script src="java.js"></script>
+  
   <script>
-    
-  document.getElementById("signupForm").addEventListener("submit", function(e) {
-    e.preventDefault();
+    document.getElementById("signupForm").addEventListener("submit", function(e) {
+      e.preventDefault();
 
-    const name = document.getElementById("name").value;
-    
-    // Simulate earnings and pending payment
-    const pendingPayment = 25.75;
-    const totalEarnings = 137.50;
+      const name = document.getElementById("name").value;
+      
+      // Simulate earnings and pending payment
+      const pendingPayment = 25.75;
+      const totalEarnings = 137.50;
 
-    // Save to localStorage
-    localStorage.setItem("userName", name);
-    localStorage.setItem("pendingPayment", pendingPayment);
-    localStorage.setItem("totalEarnings", totalEarnings);
+      // Save to localStorage
+      localStorage.setItem("userName", name);
+      localStorage.setItem("pendingPayment", pendingPayment);
+      localStorage.setItem("totalEarnings", totalEarnings);
+      localStorage.setItem("isLoggedIn", "true"); // ✅ Add login flag
 
-    alert("Account created! Redirecting to dashboard...");
-    window.location.href = "dashboard.html";
-  });
-</script>
-
+      // Show message then redirect
+      alert("Signed in successfully!");
+      window.location.href = "home.html"; // ✅ Redirect to home
     });
   </script>
 </body>
